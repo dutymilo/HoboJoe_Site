@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!---Scarlett Duty
+CGS1821.0M1
+April 25 2022--->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Hobo Joe</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital@1&family=Creepster&display=swap" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    });
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="images/joe_logo.png" alt="Cup of Joe logo">
+        <h2>Cup of Joe</h2>
+        <h3>Showcasing Hobo Joe in all his glory</h3>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id = "nav_menu">
+        <ul>
+            <li><a href = "index.html" class = "current">Home</a></li>
+            <li><a href="pages/gallery.html">Photo Gallery</a></li>
+            <li><a href="pages/friends.html">Friends of Joe</a></li>
+            <li><a href="pages/email.html">Join Email</a></li>
+            </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Meet Hobo Joe!</h1>
+            <picture>
+                <source srcset="images/joe1.webp">
+                <img src="images/joe1.jpg" alt="Hobo Joe laying next to a toy squirrel">
+            </picture>
+
+            <p>Hobo Joe is a long-haired (mostly) black cat that loves to lounge around. At nine years old, he's not very energetic, so he finds most of his entertainment
+                in watching other cats from afar, sitting in sunny windows, and trying to find ways to get outside.</p>
+            <p>Joe had spent part of his life as, well, a hobo, wandering around a neighborhood in a small rural town in Georgia. He was a hunter and brought my family dead snakes,                    squirrels, and lizards as gifts. He essentially claimed our house and would lay on our porch, sometimes cuddling with the kittens of one of the female strays.
+                He officially became our cat, though, when we decided to bring him inside after someone tried to hurt him.</p>
+            <p>For a while, he was an indoor and outdoor cat, even after we moved from Georgia to Florida. However, once we moved again to our current home,
+                Joe went outside once and was terrified of the neighborhood. My mom brought him back inside to let him cool, but a couple of days later we learned that a lot
+                of the strays in the area had FIV, so we kept him in until we could get him vaccinated. After he got his shots, we tried letting him back out, but he had 
+                gotten comfortable in the house and was too scared to go back out. From then, he's just been an indoor cat, though lately, he has been trying to escape outside.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Cup of Joe &copy; 2022, Scarlett Duty</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--Scarlett Duty
+CGS1821.0M1
+April 25 2022-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Email | Hobo Joe</title>
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/email.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    });
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="../images/joe_logo.png" alt="Cup of Joe logo">
+        <h2>Cup of Joe</h2>
+        <h3>Showcasing Hobo Joe in all his glory</h3>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id = "nav_menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="friends.html">Friends of Joe</a></li>
+            <li><a href="email.html" class ="current">Join Email</a></li>
+            </ul>
+    </nav>
+    <main>
+        <h1>Join Our Contact List!</h1>
+        <section>
+            <h2>Please fill out the form below</h2>
+    		<form action="subscribe.html" method="get" name="subscription_form" id="subscription_form">
+    			<fieldset>
+	        		<legend>Member Information</legend>
+	        		<label for="email">E-Mail:</label>
+	        		<input type="email" name="email" id="email" autofocus required><br>
+        			<label for="first_name">First Name:</label>
+					<input type="text" name="first_name" id="first_name" required><br>
+					<label for="last_name">Last Name:</label>
+					<input type="text" name="last_name" id="last_name" required><br>
+					<label for="phone">Phone Number:</label>
+					<input type="tel" name="phone" id="phone" placeholder="999-999-9999" 
+				       	   pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-999 format" required><br>
+				</fieldset>
+				<fieldset>
+					<legend>Day of Email</legend>
+					<label for="email_day">Please choose a day:</label>
+					<select name="email_day" id="email_day">
+				    	<option value="mon">Monday</option>
+				    	<option value="tue">Tuesday</option>            
+				    	<option value="wed">Wednesday</option>
+                        <option value="thur">Thursday</option>            
+				    	<option value="fri">Friday</option>
+					</select><br>
+                    <label for="date">Please choose a start date:</label>
+                    <input type="date" id="date" required>
+				</fieldset>
+                <fieldset id="check">
+                    <legend>Content</legend>
+                    <input type="checkbox" name="content1" id="content1" value="text">
+                    <label for="content1">Simple Update</label>
+                    <input type="checkbox" name="content2" id="content2" value="picture">
+                    <label for="content2">Pictures</label>
+                    <input type="checkbox" name="content3" id="content3" value="video">
+                    <label for="content3">Videos</label>
+                </fieldset>
+				<fieldset id="radio">
+					<legend>Method</legend>
+					<input type="radio" name="method" id="method1" value="email">
+					<label for="method1">Email</label>
+					<input type="radio" name="method" id="method2" value="text">
+					<label for="method2">Text</label>
+                    <input type="radio" name="method" id="method3" value="both">
+					<label for="method3">Both</label>
+				</fieldset>
+				<fieldset id="buttons">
+					<legend>Submit</legend>
+					<input type="submit" id="submit" value="Submit">
+					<input type="reset" id="reset" value="Reset Fields"><br>
+				</fieldset>
+			</form>
+        </section>
+        <p>Enjoy this video of Joe getting his daily treats :)</p>
+        <video id="videoplayer"
+        src="../video/joe_video.mp4"
+        controls
+        preload="auto"></video>
+    </main>
+    <footer>
+        <p>Cup of Joe &copy; 2022, Scarlett Duty</p>
+    </footer>
+</body>
+</html>

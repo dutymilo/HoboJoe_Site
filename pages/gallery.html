@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!---Scarlett Duty
+CGS1821.0M1
+Apr 25 2022--->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Hobo Joe</title>
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/gallery.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    });
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="../images/joe_logo.png" alt="Cup of Joe logo">
+        <h2>Cup of Joe</h2>
+        <h3>Showcasing Hobo Joe in all his glory</h3>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id = "nav_menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="gallery.html" class ="current">Photo Gallery</a></li>
+            <li><a href="friends.html">Friends of Joe</a></li>
+            <li><a href="email.html">Join Email</a></li>
+            </ul>
+    </nav>
+    <main>
+        <h1>Hobo Joe Photo Gallery</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th id="hdr_col1" scope="col"></th>
+                    <th id="hdr_col2" scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td headers="hdr_col1">
+                        <figure>
+                        <img src = "../images/young_joe.jpg" alt="Young Hobo Joe">
+                        <figcaption>Young Hobo Joe</figcaption>
+                    </figure></td>
+                    <td headers="hdr_col2">
+                        <figure>
+                        <img src = "../images/joe_dryer.jpg" alt="Hobo Joe in a dryer">
+                        <figcaption>Hobo Joe checking out the dryer</figcaption>
+                        </figure></td>
+                </tr>
+                <tr>
+                    <td headers="hdr_col1">
+                        <figure>
+                            <img src = "../images/joe_yell.jpg" alt="Hobo Joe yawning">
+                            <figcaption>Hobo Joe yawning</figcaption>
+                        </figure></td>
+                    <td headers="hdr_col2">
+                        <figure>
+                            <img src = "../images/joe_pretty.jpg" alt="Pretty Hobo Joe">
+                            <figcaption>Hobo Joe sitting pretty</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+                <tr>
+                    <td headers="hdr_col1">
+                        <figure>
+                            <img src = "../images/joe_tongue.jpg" alt="Hobo Joe sticking his tongue out">
+                            <figcaption>Hobo Joe says :p</figcaption>
+                        </figure></td>
+                    <td headers="hdr_col2">
+                        <figure>
+                            <img src = "../images/curious_joe.jpg" alt="Hobo Joe sniffing the air">
+                            <figcaption>Hobo Joe sniffing the air</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+                <tr>
+                    <td headers="hdr_col1">
+                        <figure>
+                            <img src = "../images/prebath_joe.jpg" alt="Hobo Joe in a bathroom">
+                            <figcaption>Hobo Joe before a bath</figcaption>
+                        </figure></td>
+                    <td headers="hdr_col2">
+                        <figure>
+                            <img src = "../images/wet_joe.jpg" alt="Wet Hobo Joe in a bathtub">
+                            <figcaption>Hobo Joe after a bath</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+                <tr>
+                    <td headers="hdr_col1">
+                        <figure>
+                            <img src = "../images/sleepy_joe.jpg" alt="Hobo Joe sleeping on a desk">
+                            <figcaption>Sleepy Hobo Joe</figcaption>
+                        </figure></td>
+                    <td headers="hdr_col2">
+                        <figure>
+                            <img src = "../images/joe_ribbon.jpg" alt="Hobo Joe laying on a piece of ribbon">
+                            <figcaption>Hobo Joe with a ribbon</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>Cup of Joe &copy; 2022, Scarlett Duty</p>
+    </footer>
+</body>
+</html>
